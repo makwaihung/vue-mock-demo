@@ -19,6 +19,9 @@ npm run build --report
 
 # run mock api serve
 npm run mock
+
+# run mock api serve & serve with hot reload
+npm run serve
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

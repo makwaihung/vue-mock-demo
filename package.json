@@ -9,7 +9,8 @@
     "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js",
-    "mock": "supervisor mock_server/server.js"
+    "mock": "supervisor mock_server/server.js",
+    "serve": "concurrently \"npm run dev\" \"npm run mock\""
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -29,6 +30,7 @@
     "babel-preset-stage-2": "^6.22.0",
     "boom": "^7.2.0",
     "chalk": "^2.0.1",
+    "concurrently": "^3.5.1",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.0",
     "eslint": "^4.15.0",
